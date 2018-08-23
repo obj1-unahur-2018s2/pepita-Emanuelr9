@@ -14,10 +14,16 @@ object pepon {
 // implementar el objeto entero, salvo haceLoQueQuieras que lo damos hecho
 // ayuda: conviene ponerle dos atributos
 object pipa {
+	var vuela=0
+	var comida=0
+	method comer(cosa, gramos){comida+=gramos}
+	method volar(kms) {vuela+=kms}
+	method kmsRecorridos(){return vuela}
+	method gramosIngeridos(){return comida}
 	
 	/*
 	 * cuando le dicen a pipa que haga lo que quiera, no hace nada
 	 */
-	method haceLoQueQuieras() { }   // queda asi
+	method haceLoQueQuieras() {console.println("no hace nada") }   // queda asi
 	// pregunta: ¿por qué es necesario agregar este método, sin código
 }
