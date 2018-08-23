@@ -41,14 +41,14 @@ object mijo {
 	}
 	
 object canelones {
-	var inicial=0
+	var agregado=20
 	
-	method salsa() { return (inicial + 5) }
-	method queso() { return (inicial + 7) }
-	method salsayqueso() { return (inicial + 12 ) }
-	method sacarsalsa () { return inicial }
-	method sacarqueso () { return inicial }
-	method energiaPorGramo() { return inicial+20 }
+	method salsa() { return agregado + 5 }
+	method queso() { return agregado + 7 }
+	method salsayqueso() { return agregado + 12  }
+	method sacarsalsa () { return agregado-5  }
+	method sacarqueso () { return (agregado-7) }
+	method energiaPorGramo() { return agregado+20 }
 }
 
 
