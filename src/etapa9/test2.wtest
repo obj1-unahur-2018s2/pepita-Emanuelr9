@@ -1,0 +1,43 @@
+import masAves.*
+import golondrina.*
+import comidas.*
+import roque.*
+
+
+test "tes2" {
+
+	var juliana=new Golondrina()
+	var melisa=new Golondrina()
+	var tatiana=new Golondrina()
+	
+	
+	juliana.comer(alpiste,50)
+	melisa.comer( mondongo,9)
+	tatiana.comer(sorgo,8)
+	pepon.comer(alpiste,100)
+	
+	var pirincha=new Paloma()
+	var pirula=new Paloma()
+	
+	pirula.comer(alpiste,100)
+    pirincha.volar(20)
+    
+    roque.agregarPupilo(juliana)
+    roque.agregarPupilo(melisa)
+    roque.agregarPupilo(pirincha)
+    roque.agregarPupilo(pepon)
+    
+    roque.entrenar()
+   
+       
+    assert.equals(285, juliana.energia())
+	assert.equals(967, melisa.energia())
+	assert.equals(72 , tatiana.energia())
+	assert.equals(249 , pepon.energia())
+	
+	assert.equals(100 , pirula.gramosIngeridos())
+	assert.equals(0, pirula.kmsRecorridos())
+	
+    assert.equals(35 , pirincha.kmsRecorridos())
+    assert.equals(30 , pirincha.gramosIngeridos())
+}
